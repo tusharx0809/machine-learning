@@ -1,1 +1,1 @@
-# machine-learning
+# this repository conatins basics of machine-learning
