@@ -1,0 +1,3 @@
+# ACME insurance offers affordable health insurance to thousands of customers all over the United States. As the lead data scientist at ACME, you are tasked with creating an automated system to estimate the annual expenditure for new customers, using information such as age, sex, BMI, children, smoking habits and region of residence.
+
+# Estimates from the system will be used to determine the annual insurance premium (amount paid every month) offered to customer.
