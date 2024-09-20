@@ -10,7 +10,7 @@ raw_df = pd.read_csv('C:/college/Python/machine-learning/rainfall-prediction/wea
 raw_df.dropna(subset=['RainTomorrow'], inplace=True)
 
 
-"""Creating training, validation and test data sets
+"""Creating training and test data sets
 Year < 2015 is for training data set
 Year > 2015 is for test data set"""
 year = pd.to_datetime(raw_df.Date).dt.year
@@ -63,16 +63,6 @@ model = RandomForestClassifier(
                               )
 
 model.fit(X_train, train_targets)
-
-def predict_input(model, single_input):
-  inputs_df = pd.DataFrame([single_input])
-  inputs_df[numeric_cols] = imputer.transform(inputs_df[numeric_cols])
-  inputs_df[numeric_cols] = scaler.transform(inputs_df[numeric_cols])
-  inputs_df[encoded_cols] = encoder.transform(inputs_df[categorical_cols])
-  X_input = inputs_df[numeric_cols + encoded_cols]
-  pred = model.predict(X_input)[0]
-  prob = model.predict_proba(X_input)[0][list(model.classes_).index(pred)]
-  return pred, prob
 
 pickle.dump(imputer, open("C:/college/Python/machine-learning/rainfall-prediction/imputer.pkl","wb"))
 pickle.dump(scaler, open("C:/college/Python/machine-learning/rainfall-prediction/scaler.pkl","wb"))

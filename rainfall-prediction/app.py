@@ -64,7 +64,7 @@ def predict():
     pred = model.predict(X_input)[0]
     prob = model.predict_proba(X_input)[0][list(model.classes_).index(pred)]
 
-    prediction_text = f'Rain Tomorrow: {pred}, Probability: {prob:.2f}'
+    prediction_text = f'Rain Tomorrow: {pred}'
 
     # Render the result
     return render_template('index.html', prediction_text=prediction_text)
