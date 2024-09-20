@@ -5,7 +5,7 @@ body{
   background-attachment: fixed;
 }
 .heading{
-  color: grey;
+  color: rgb(172, 169, 169);
   font-family: Roboto;
   height: 60px;
   display:flex;
@@ -25,10 +25,10 @@ body{
   height: 40px;
   width: 400px;
   background-color:transparent;
-  color: rgb(196, 192, 192);
+  color: rgb(172, 169, 169);
   font-size: 18px;
   border-radius: 15px;
-  border: 2px solid rgb(196, 192, 192);
+  border: 2px solid rgb(172, 169, 169);
   text-align: center;
   transition: padding-left 0.15s ease, padding-right 0.15s ease, padding-top 0.15s ease, padding-bottom 0.15s ease, border 0.15s ease;
 }
@@ -41,7 +41,7 @@ select {
   color: grey;
   font-size: 18px;
   border-radius: 15px;
-  border: 2px solid rgb(196, 192, 192);
+  border: 2px solid rgb(172, 169, 169);
   text-align: center;
   transition: padding-left 0.15s ease, padding-right 0.15s ease, padding-top 0.15s ease, padding-bottom 0.15s ease, border 0.15s ease;
 }
@@ -53,20 +53,20 @@ select {
   border: 2px solid white;
 }
 .input::placeholder {
-  color: rgb(175, 172, 172);
+  color: rgb(172, 169, 169);
 }
 select::placeholder {
-  color: rgb(175, 172, 172); 
+  color: rgb(172, 169, 169); 
 }
 .btn{
   margin: 8px;
   height: 40px;
   width: 400px;
   background-color:transparent;
-  color: rgb(196, 192, 192);
+  color: rgb(172, 169, 169);
   font-size: 18px;
   border-radius: 15px;
-  border: 2px solid rgb(196, 192, 192);
+  border: 2px solid rgb(172, 169, 169);
   text-align: center;
 }
 .output{
@@ -76,11 +76,11 @@ select::placeholder {
   margin-top: 15px; 
   width: 400px;
   background-color: transparent;
-  color: rgb(196, 192, 192);
+  color: rgb(172, 169, 169);
   font-size: 18px;
   font-family: Roboto;
   border-radius: 15px;
-  border: 2px solid rgb(196, 192, 192);
+  border: 2px solid rgb(172, 169, 169);
   text-align: center;
   height: 40px;
 }
