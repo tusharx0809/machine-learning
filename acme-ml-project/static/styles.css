@@ -19,69 +19,38 @@ h1{
   flex-direction: column;
   margin-top: -80px;
 }
-.input1{
-  height: 40px;
-  width: 400px;
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
 }
-.label-age, .label-bmi, .label-children, .label-smoker, .label-sex, .label-region{
+.label {
+  width: 100px;
   font-family: Roboto;
   font-size: 20px;
   color: rgb(59, 58, 58);
   font-style: italic;
+  text-align: right;
+  margin-right: 15px;
 }
-.input-age, .input-bmi{
-  margin-left: 55px;
+input, select {
   height: 30px;
   width: 200px;
   background: transparent;
   border: 0.5px solid rgb(59, 58, 58);
   border-radius: 12.5px;
-  transition: height 0.25s ease, width 0.25s ease;
+  transition: height 0.15s ease, width 0.15s ease;
 }
-.input-children{
-  margin-left: 30px;
-  height: 30px;
-  width: 200px;
-  background: transparent;
-  border: 0.5px solid rgb(59, 58, 58);
-  border-radius: 12.5px;
-  transition: height 0.25s ease, width 0.25s ease;
-}
-.input-smoker{
-  margin-left: 37px;
-  height: 35px;
-  width: 205px;
-  background: transparent;
-  border: 0.5px solid rgb(59, 58, 58);
-  border-radius: 12.5px;
-  transition: height 0.25s ease, width 0.25s ease;
-}
-.input-sex{
-  margin-left: 41px;
-  height: 35px;
-  width: 205px;
-  background: transparent;
-  border: 0.5px solid rgb(59, 58, 58);
-  border-radius: 12.5px;
-  transition: height 0.25s ease, width 0.25s ease;
-}
-.input-region{
-  margin-left: 41px;
-  height: 35px;
-  width: 205px;
-  background: transparent;
-  border: 0.5px solid rgb(59, 58, 58);
-  border-radius: 12.5px;
-  transition: height 0.25s ease, width 0.25s ease;
-}
-.input-age:focus, .input-bmi:focus, .input-children:focus{
+input:focus, select:focus {
   height: 35px;
   width: 205px;
 }
 .pred{
-  margin-left: 35px;
+  margin-left: 85px;
+  margin-top: 20px;
   height: 40px;
-  width: 250px; 
+  width: 200px; 
   background: transparent;
   color: rgb(59, 58, 58);
   border: 0.5px solid rgb(59, 58, 58);
@@ -93,5 +62,10 @@ h1{
   transition: background 0.3s ease;
 }
 .pred:hover {
-  background: rgba(59, 58, 58, 0.1); /* Change background on hover */
+  background: rgba(59, 58, 58, 0.1); 
+}
+.output{
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
