@@ -3,10 +3,10 @@ import pickle
 import pandas as pd
 
 # Load the saved model, scaler, imputer, and encoder
-model = pickle.load(open('C:/college/Python/machine-learning/rainfall-prediction/model.pkl', 'rb'))
-imputer = pickle.load(open('C:/college/Python/machine-learning/rainfall-prediction/imputer.pkl', 'rb'))
-scaler = pickle.load(open('C:/college/Python/machine-learning/rainfall-prediction/scaler.pkl', 'rb'))
-encoder = pickle.load(open('C:/college/Python/machine-learning/rainfall-prediction/encoder.pkl', 'rb'))
+model = pickle.load(open('model.pkl', 'rb'))
+imputer = pickle.load(open('imputer.pkl', 'rb'))
+scaler = pickle.load(open('scaler.pkl', 'rb'))
+encoder = pickle.load(open('encoder.pkl', 'rb'))
 
 # Define input columns based on the HTML form
 numeric_cols = ['MinTemp', 'MaxTemp', 'Rainfall', 'Evaporation', 'Sunshine', 'WindGustSpeed',

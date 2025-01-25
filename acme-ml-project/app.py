@@ -4,9 +4,9 @@ import pickle
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 
 # Load the model, scaler, and encoder
-model = pickle.load(open('C:/college/Python/machine-learning/acme-ml-project/model.pkl', 'rb'))
-scaler = pickle.load(open('C:/college/Python/machine-learning/acme-ml-project/scaler.pkl', 'rb'))
-encoder = pickle.load(open('C:/college/Python/machine-learning/acme-ml-project/encoder.pkl', 'rb'))
+model = pickle.load(open('model.pkl', 'rb'))
+scaler = pickle.load(open('scaler.pkl', 'rb'))
+encoder = pickle.load(open('encoder.pkl', 'rb'))
 
 app = Flask(__name__)
 
